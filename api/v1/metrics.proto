@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package api.v1;
+
+option go_package = "connect-go-embed-vue/gen/api/v1;apiv1";
+
+message CpuUsageStreamRequest {
+}
+
+message CpuUsageStreamResponse {
+  float percent = 1;
+}
+
+service MetricsService {
+  rpc CpuUsageStream(CpuUsageStreamRequest) returns (stream CpuUsageStreamResponse) {}
+}
