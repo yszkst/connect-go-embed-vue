@@ -6,7 +6,7 @@ const transport = createConnectTransport({
   baseUrl: "/api/",
 });
 
-// NOTE: https://connect.build/docs/web/using-clients#managing-clients-and-transports
+// NOTE: https://connectrpc.com/docs/web/using-clients/#managing-clients-and-transports
 const memo = new Map();
 
 export function getClient<T extends ServiceType>(service: T): PromiseClient<T> {
