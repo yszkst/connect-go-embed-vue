@@ -67,7 +67,7 @@ func getEnv(key string, fallback string, acceptable []string) string {
 	return fallback
 }
 
-//go:embed frontend/dist
+//go:embed frontend/dist/*
 var static embed.FS
 
 func main() {
