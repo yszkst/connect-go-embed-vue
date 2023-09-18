@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onBeforeUnmount, ref } from "vue";
-import { ConnectError, Code } from "@bufbuild/connect";
+import { ConnectError, Code } from "@connectrpc/connect";
 import { MetricsService } from "../../gen/api/v1/metrics_connect";
 import { getClient } from "../lib/api";
 

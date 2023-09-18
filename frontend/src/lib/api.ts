@@ -1,5 +1,5 @@
-import { createConnectTransport } from "@bufbuild/connect-web";
-import { PromiseClient, createPromiseClient } from "@bufbuild/connect";
+import { createConnectTransport } from "@connectrpc/connect-web";
+import { PromiseClient, createPromiseClient } from "@connectrpc/connect";
 import type { ServiceType } from "@bufbuild/protobuf";
 
 const transport = createConnectTransport({
@@ -11,7 +11,6 @@ const memo = new Map();
 
 export function getClient<T extends ServiceType>(service: T): PromiseClient<T> {
   if (memo.has(service)) {
-    console.log('AHAHAHAAHA')
     return memo.get(service)!;
   }
 
