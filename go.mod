@@ -3,7 +3,7 @@ module connect-go-embed-vue
 go 1.20
 
 require (
-	connectrpc.com/connect v1.11.1 // indirect
+	connectrpc.com/connect v1.11.1
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	golang.org/x/exp v0.0.0-20230725093048-515e97ebf090
 	golang.org/x/net v0.12.0
