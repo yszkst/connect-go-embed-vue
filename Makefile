@@ -13,8 +13,8 @@ prepare:
 
 .PHONY: gen
 gen:
-	buf generate
-	cd frontend/; npx buf generate;
+	buf generate --path=api/
+	cd frontend/; npx buf generate --path=api/;
 
 .PHONY: dev
 dev: gen
